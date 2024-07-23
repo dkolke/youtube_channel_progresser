@@ -8,9 +8,9 @@ After cloning or downloading the source, do the following to get your own Youtub
 3. (script.js)Copy API Key and replace API_KEY with your key in the first line.
 4. Save and open HTML file with a browser of your choice.
 5. Go to a youtube channel, hit share button, hit copy channel id. Paste channel id in the input box on the left.
-5a. For playlists, open a playlist, and copy the ID in the URL after &list=
+    [For playlists, open a playlist, and copy the ID in the URL after &list=]
 6. After the channel is added, choose it from the dropdown and hit the Update List Button.
-6a. If the Channel or Playlist got updated, just hit Update List again, to get the newest videos.
+    [If the Channel or Playlist got updated, just hit Update List again, to get the newest videos.]
 
 ENJOY!
 
