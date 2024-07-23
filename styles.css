@@ -10,6 +10,35 @@ body {
     background-color: #121212;
 }
 
+.container {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.naviDiv {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.naviDiv, .addBox > * {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.contentDiv {
+    width: 90%;
+}
+
 .buttonsBox {
     display: flex;
     flex-direction: row;
