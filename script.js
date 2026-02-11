@@ -191,7 +191,7 @@ function showVideo() {
     const vidId = getCurrentPlaylist().videos[getCurrentPlaylist().currentIndex];
     if(vidId) {
         const ytVidElement = document.getElementById("yt-iframe");
-        ytVidElement.src = "https://www.youtube.com/embed/" + vidId;
+        ytVidElement.src = "https://www.youtube.com/embed/" + vidId + "?origin=null";
     }
 }
 
