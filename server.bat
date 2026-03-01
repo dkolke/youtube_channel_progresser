@@ -12,7 +12,7 @@ rem %~dp0 = Laufwerk + Pfad der Batch‑Datei (inkl. abschließendem "\")
 pushd "%~dp0"
 
 rem ----- 2. Prüfen, ob Python 3 verfügbar ist -------------------------
-python -c "import sys; assert sys.version_info >= (3,0)" 2>nul
+py -c "import sys; assert sys.version_info >= (3,0)" 2>nul
 if errorlevel 1 (
     echo.
     echo *** ERROR ***
@@ -32,7 +32,7 @@ rem ----- 4. Server starten (im Hintergrund) ---------------------------
 rem Wir starten den Server in einem separaten Prozess, damit wir
 rem sofort den Browser öffnen können.
 start "Python HTTP Server" cmd /c ^
-    python -m http.server %PORT% --bind 127.0.0.1
+    py -m http.server %PORT% --bind 127.0.0.1
 
 rem ----- 5. Browser öffnen -------------------------------------------
 rem Warte kurz, damit der Server Zeit hat, den Socket zu binden.
